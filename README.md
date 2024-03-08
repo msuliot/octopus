@@ -115,7 +115,7 @@ print(response.text)
 
 #### Description
 
-This endpoint is designed to provide a detailed breakdown of costs associated with the use of each model, tailored to individual users. Upon request, users will receive information detailing the cost per model, along with any variations based on usage patterns or subscription levels. This cost analysis aims to offer transparency and help users in planning and budgeting their usage of the API services more effectively. It takes into account factors such as the number of requests made, the complexity of the models used, and any additional services or resources consumed during the prediction process.
+This endpoint is designed to provide a detailed breakdown of `costs` associated with the use of each model, tailored to individual users. Upon request, users will receive information detailing the cost per model, along with any variations based on usage patterns or subscription levels. This cost analysis aims to offer transparency and help users in planning and budgeting their usage of the API services more effectively. It takes into account factors such as the number of requests made, the complexity of the models used, and any additional services or resources consumed during the prediction process.
 
 #### HTTP Method
 
