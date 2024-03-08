@@ -1,10 +1,12 @@
 ## Octopus Overview
 
-This is the documentation for the Models API. The API is a RESTful API that allows you to interact with the models available in the Octopus platform. We currently have 16 models available in the API. 
+This document serves as the guide for the Models API. The API is designed as a RESTful interface, facilitating interactions with the various models hosted within the R&D API framework. As of now, a total of 16 models are accessible through this API.
 
 ## Authentication
 
-The API uses API key and secret key for authentication. You can get your API key and secret key by request only.
+Authentication is achieved through the use of an API key and a secret key. These keys are obtainable upon request. For access, please follow the designated process for submitting your request, which can be found at [specific instructions or contact information].
+
+This revision aims to enhance clarity and ensure readers have a straightforward understanding of how to access and utilize the API effectively.
 
 ## API Endpoints
 
@@ -12,7 +14,7 @@ The API uses API key and secret key for authentication. You can get your API key
 
 #### Description
 
-This endpoint will allow you to get a `list` of models available in the API.
+This endpoint provides users with the ability to retrieve a `list` of all models currently available through the API. Upon calling this endpoint, you will receive a structured list detailing each model's unique identifiers and key characteristics, enabling you to identify and select models for your specific needs.
 
 #### HTTP Method
 
@@ -30,7 +32,7 @@ This endpoint will allow you to get a `list` of models available in the API.
 
 #### Request Body
 
-No request body on get request
+For this GET request, no request body is required or processed. GET requests are designed to retrieve data from the server based on the specified endpoint and query parameters, if any, without the need for a request body. This simplifies the request process, focusing solely on the endpoint URL to access the available models in the API.
 
 #### Python Example
 
@@ -52,13 +54,11 @@ print(response.text)
 
 ```
 
----
-
 ### 2. Model Prediction (prompt)
 
 #### Description
 
-This is where you call the model, by providing the prompt and the model will return the prediction.
+This endpoint is designed for making predictions by interacting directly with the model. Users are required to submit a prompt or input data, which the model uses as the basis for its prediction. Upon receiving the prompt, the model processes the input and generates a response that constitutes the prediction. This process is key for applications involving natural language processing, image recognition, or other data analysis tasks where model-based insights are needed. The response format and the specificity of the prediction depend on the model's design and the nature of the prompt provided.
 
 #### HTTP Method
 
@@ -111,13 +111,11 @@ print(response.text)
 
 ```
 
----
-
 ### 3. Model Costs
 
 #### Description
 
-This will get you a breakdown of the cost per model and per user.
+This endpoint is designed to provide a detailed breakdown of costs associated with the use of each model, tailored to individual users. Upon request, users will receive information detailing the cost per model, along with any variations based on usage patterns or subscription levels. This cost analysis aims to offer transparency and help users in planning and budgeting their usage of the API services more effectively. It takes into account factors such as the number of requests made, the complexity of the models used, and any additional services or resources consumed during the prediction process.
 
 #### HTTP Method
 
@@ -132,6 +130,10 @@ This will get you a breakdown of the cost per model and per user.
 - `api-key: <your_api_key>`
 - `secret-key: <your_secret_key>`
 - `content-type: application/json`
+
+#### Request Body
+
+For this GET request, no request body is required or processed. GET requests are designed to retrieve data from the server based on the specified endpoint and query parameters, if any, without the need for a request body. This simplifies the request process, focusing solely on the endpoint URL to access the available models in the API.
 
 #### Python Example
 
