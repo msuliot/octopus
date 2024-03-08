@@ -158,7 +158,7 @@ print(response.text)
 
 ## IP Blocking and Rate Limiting
 
-In the near future, we will be implementing rate limiting and IP blocking mechanisms to enhance the security and reliability of our API. 
+We have implemented rate limiting and IP blocking mechanisms to enhance the security and reliability of our API. 
 
 ### Rate Limiting
 Rate limiting is being introduced to ensure fair usage and maintain optimal service levels for all users. This measure will prevent excessive requests from overloading our systems, ensuring that the API remains highly available and responsive. Users will be informed about their rate limits and how to manage their requests efficiently.
